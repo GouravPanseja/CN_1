@@ -2,9 +2,10 @@
     box-sizing:border-box;
     padding:0;
     margin:0;
-    color:white;
+    
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration:none;
+    scroll-behavior: smooth;
 
 
 }
@@ -135,13 +136,20 @@ a:hover{
    
 
 }
-#Detials_inner{
-    margin-left:145px;;
+#Details_inner{
+    margin:50px 150px 50px 150px;
+    font-size:20px;
+    position:relative;
     
 }
-#Details pre,sup,b{
-    color:black;
-    font-size:20px;
+
+#hero_img1{
+    position:relative;
+    bottom:60px;
+}
+
+#hero_img2{
+    bottom:100px;
 }
 
 #Details h2{
@@ -153,3 +161,61 @@ a:hover{
     line-height: 40px;
     font-weight:600;
 }
+
+
+
+
+#Details td,th{
+    padding:10px 20px 0 0;
+}
+    
+#Detail_info p{
+    width:500px;
+    overflow:hidden;
+}
+
+#Details_div_img{
+    
+    position:absolute;
+    top:0px;
+    right:00px;    
+    transition-property:all;
+    transition-duration:1s;
+    transition-timing-function: ease-out;
+
+    /* animation-name:qr;
+    animation-duration:3s;
+    animation-timing-function: ease-out;
+    animation-delay:5s;
+    animation-iteration-count:infinite; */
+ 
+
+}
+#Details_div_img:hover{
+    transform:rotate(360deg)
+    
+      
+   
+ 
+
+}
+
+
+#Details_div_img img{
+    width:150px;
+    margin:20px;
+    position:relative;
+
+}
+
+
+  
+  @keyframes qr {
+    0% {
+      transform:rotate(0deg);
+    }
+    100% {
+      transform:rotate(360deg);
+      
+    }
+  }
