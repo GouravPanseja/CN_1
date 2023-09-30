@@ -4,48 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+   
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <div id="logo">
-        <img id="logo_img" src="logo.png" />
-      </div>
+
+    <!-- <div id="onload"></div> -->
+    <nav id="nav_bar">
+      
       <div class="nav_item cursor" id="nav_details">
         <a href="#Details">Details</a>
       </div>
-      <div class="nav_item cursor" id="nav_sponsers">
-        <a href="#Sponsers">Register</a>
+      <div class="nav_item cursor" id="nav_past">
+        <a href="#past_events">Events</a>
       </div>
+      <div class="nav_item cursor" id="nav_sponsers">
+        <a href="#register">Register</a>
+
+      </div>
+      
       <div class="nav_item cursor" id="nav_about">
-        <a href="#About">About Us</a>
+        <a href="#about">About Us</a>
       </div>
 
-      <div id="logo">
-        <img id="logo2_img" src="logo2.png" />
-      </div>
+      <button id="btn_log_in" class="nav_item cursor">
+        <a href="#log_in_model">Log in</a>
+      </button>
+      
     </nav>
 
-    <div id="hero">
-     
-      <img id="hero_img1" class="hero_img" src="Hero.png" />
-      <img id="toon" class="hero_img" src="CN_img.webp" />
+    
+    <div id="log_in_model">
+      <div id="log_inner">
+        <a id="cross" href="#"><i class="fa-solid fa-circle-xmark" style="color: #000000;" id="x_mark"></i></a>
+        
+        <h3>Log In</h2>
+          <form>
+            <div class="log_input_div">
+            <label for="first_log">Email / Username  </label>
+            <input type="email" name="input"  class="log_in_input" id="first_log">
+          </div>
+          <div class="log_input_div">
+            <label for="second_log">Password</label>
+            <input type="password" name="input"  class="log_in_input" id="second_log">
+          </div>
+          <button id="btn_log">Done</button>
+        </form>
+          
+        
+      
+        </div>
+    </div>
+    
+            <div class="hr"></div>
 
-      <img id="hero_img2" class="hero_img" src="Hero2.png" />
+      <div id="hero">
+
+
+      <p id='type_text'></p>
+
+      <ul>
+        <li id="li_main">FUSION FRIDAY</li>
+        <li>by Coding Ninjas CUIET</li>
+        <li> A Weekly National level Contest </li>
+        
+      </ul>
+
+      
+     
+       <div id="toon_div">
+         <img id="toon" class="hero_img" src="CN_img.webp" />
+        </div>
+     
+
+
     </div>
 
 
     
 
     <div id="Details">
-      <h2>Test Details</h2>
+      <h2>TEST DETAILS</h2>
 
       <div id="Details_inner">
           <table>
@@ -76,59 +124,198 @@
             
             
         </div>
-        <div id="Details_div_img"><img src="qr_code.png" alt="Qr_code">
+        <div id="Details_div_img"><img src="ninja.svg" alt="Ninja_pic">
         </div>
+
+        
              
 
         </div>
+      </div>
+      <!--############################################## Previous Events #######################################################################-->
+
+        <div id="past_events"> 
+          <h2>PAST EVENTS</h2>
+          
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+
+          <div class="carousel-inner">
 
 
-        
+            <div class="carousel-item active" data-bs-interval="3000" id="crousel_slide1">
+           
+              <div class="crousel_slide"> 
+                  <div id="slide1_div1">
+                  <img src="crousel_img1.png" class="crousel_img">
+                </div>
+
+                <div id="slide1_div2">
+                  <img src="crousel_img2.jpeg" class="crousel_img">
+                </div>
+
+                <div id="slide1_div3">
+                  <img  src="crousel_img3.jpeg" class="crousel_img">
+                </div>
+              </div>
+               
+                
+            </div>
 
 
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="crousel_slide"> 
+                <div id="slide2_div1">
+                  <img src="crousel_img4.jpg" class="crousel_img">
+                </div>
+
+                <div id="slide2_div2">
+                  <img src="crousel_img5.jpg" class="crousel_img">
+                </div>
+
+                <div id="slide2_div3">
+                  <img  src="crousel_img6.jpg" class="crousel_img">
+                </div>
+              </div>
+            
+              
+              
+            </div>
+
+            
+
+
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+      </div>
+
+
+<div id="register">
+  <div id="register_img_div">
+    <img src="3d_img2.png" alt="img" id="register_img" >
+  </div>
+      
+
+
+  
+      
+    <div id="register_inner">
+            <p id="register_inner_p1">Code like a champion!</p>
+            <p id="register_inner_p2">Join the competition now and let your skills shine!</p>
+
+            <div class="register_input_div">
+              <label for="first">Email id  </label>
+              <input type="text" name="input"  class="register_input" id="first">
+            </div>
+            <div class="register_input_div">
+              <label for="second">Password </label>
+              <input type="password" name="input"  class="register_input" id="second">
+            </div>
+
+            <div class="register_input_div">
+              <label for="third">Roll number  </label>
+              <input type="number" name="input"  class="register_input" id="third">
+            </div>
+
+            <div class="register_input_div" id="register_select">
+              <label for="fourth">Department </label>
+              <select id="fourth" name="input" class="register_input">
+                <option>Choose</option>
+                <option>CSE</option>
+                <option>CSE-AI</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                
+              </select>
+            </div>
+
+            <div class="register_input_div">
+              <input type="submit" name="input"  class="register_input" id="fifth">
+            </div>
+          </div>
+        </div>
+  <!-- #################################################### About ####################################################################-->
+     <div id="about">
+
+        <div id="about_left"> 
+         <ul>
+        <li id="about_li_main">@CodingNinjas_CUIET</li>
+        <li>cn.cuiet@chitkara.edu.in</li>
+        <li>Chandigarh-Patiala National Highway (NH-64), Village Jhansla, Rajpura, Punjab 140401</li>
+       </ul>
+      </div>
+    
+       <div id="about_right">
+        <ul>
+          <li>Follow Us On:</li>
+          <li><a href="https://www.instagram.com/codingninjas_cuiet/?igshid=MzRlODBiNWFlZA%3D%3D"><i class="fa-brands fa-instagram  fa-2xl"></i> </a><a href="https://www.linkedin.com/company/codingninjas-cuiet/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+          
+        </ul>
+       </div>
+      
     </div>
 
-
-
-
-
-
-
-
-
+    <footer>
+      Copyright &#169; All rights reserved.
+    </footer>
+    
       <script>
-      // var i = 0;
-      // var txt = 'The Coding Ninjas Welcomes you';
-      // var speed = 50;
+        type_text= document.getElementById('type_text')
 
-      // function typeWriter() {
-      //   if (i < txt.length) {
-      //     document.getElementById("demo").innerHTML += txt.charAt(i);s
-      //     i++;
-      //     setTimeout(typeWriter, speed);
-      //   }
-      // }
+        var lines=["Dive into the Code Abyss with Coding Ninjas - Are You Brave Enough? ", 
+        "Ready to Elevate Your Coding Game? Join the Coding Ninjas Revolution! ", " Can You Conquer the Coding Challenges? Find Out at Coding Ninjas' Event! "] ;
+     
+       i=0
+       char=0
+
+       var delay= ()=>{ console.log("waiting");}
+
+       var text= ()=>{        
+        type_text.innerHTML +=`${lines[i].charAt(char)}`;
+        char +=1
+      
+          if (char==lines[i].length){
+            i +=1
+            char=0
+            setTimeout(delay,1000) ;           
+            type_text.innerHTML='';
+        }
+        if (i==2){
+             i=0
+             
+        }}
+       
+
+       setInterval(text,90);
+
+       const navBar = document.getElementById('nav_bar');
+
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+        navBar.style.backgroundColor = '#191b20'; // Note: Added '1' for full opacity
+
+        } else {
+        navBar.style.backgroundColor = 'transparent';
+         }
+        });
+
+
 
    
       </script>
 
 
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
   </body>
 </html>

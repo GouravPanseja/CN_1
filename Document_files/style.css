@@ -12,7 +12,9 @@
 a{
     text-decoration:none;
 }
-
+body{
+    height:10000px;
+}
 .hr{
     display:flex;
     justify-content:center;
@@ -174,9 +176,8 @@ nav{
 }
 
 a:hover{
-
-    text-decoration:solid underline;
-    
+    background: rgb(115, 71, 53);
+    color:black;
 
 }
 .cursor{
@@ -508,32 +509,16 @@ color-dodge
 }
 
 #about{
-    height:200px;
+    height:400px;
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
-    position:relative;
-}
-#about::before{
-    content:'';
-    background: url('bg.gif') ;
-    background-size:cover;
-    background-repeat: no-repet;
-    position:absolute;
-    top:0;
-    left:0;
-    height:100%;
-    width:100%;
-    z-index:-1;
-    opacity:0.01;
 
-    
+
 }
 li i{
-    margin:20px 20px 20px 0px;  
-    z-index:5;
-    
+    height:50px;
 }
 
 #about ul{
@@ -545,16 +530,4 @@ li i{
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    
-}
-
-footer{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:40px;
-    background: black;
-    color:white;
-    font-weight:200;
-    
 }
