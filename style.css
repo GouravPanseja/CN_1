@@ -351,10 +351,7 @@ color-dodge
     position:absolute;
     top:-7px;
     right:00px;    
-    transition-property:all;
-    transition-duration:1s;
-    transition-timing-function: ease-out;
-    
+   
 
     /* animation-name:qr;
     animation-duration:3s;
@@ -364,14 +361,7 @@ color-dodge
  
 
 }
-#Details_div_img:hover{
-    transform:rotate(360deg)
-    
-      
-   
- 
 
-}
 
 
 #Details_div_img img{
@@ -556,5 +546,5 @@ footer{
     background: black;
     color:white;
     font-weight:200;
-    
+
 }
