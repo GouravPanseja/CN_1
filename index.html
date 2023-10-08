@@ -12,9 +12,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-   
-
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
@@ -69,21 +67,29 @@
 
       <div id="hero">
 
+        <div id="hero_left">
+          
+          <ul>
+          <li id="li_main">FUSION FRIDAY</li>
+          <li>by Coding Ninjas CUIET</li>
+          <li> A Weekly National level Contest </li>
+          
+          </ul>
 
-      <p id='type_text'></p>
+          <div id="type_text"></div>
 
-      <ul>
-        <li id="li_main">FUSION FRIDAY</li>
-        <li>by Coding Ninjas CUIET</li>
-        <li> A Weekly National level Contest </li>
-        
-      </ul>
+
+        </div>
+
 
       
+        <div id="hero_right">
+            <div id="toon_div">
+              <img id="toon" class="hero_img" src="images/CN_img.webp" />
+            </div>
      
-       <div id="toon_div">
-         <img id="toon" class="hero_img" src="CN_img.webp" />
         </div>
+      
      
 
 
@@ -93,9 +99,10 @@
     
 
     <div id="Details">
-      <h2>TEST DETAILS</h2>
+    
 
-      <div id="Details_inner">
+      <div id="details_left">
+          <h2>TEST DETAILS</h2>
           <table>
           <tr> 
             <th>Date:</th>
@@ -124,13 +131,15 @@
             
             
         </div>
-        <div id="Details_div_img"><img src="ninja.svg" alt="Ninja_pic">
-        </div>
+      </div>
+      
+      <div id="details_right"> 
+        <div id="Details_div_img">
+          <img src="images/ninja.svg" alt="Ninja_pic">
+        </div>             
+</div>
 
-        
-             
-
-        </div>
+       
       </div>
       <!--############################################## Previous Events #######################################################################-->
 
@@ -146,15 +155,15 @@
            
               <div class="crousel_slide"> 
                   <div id="slide1_div1">
-                  <img src="crousel_img1.png" class="crousel_img">
+                  <img src="images/crousel_img1.png" class="crousel_img">
                 </div>
 
                 <div id="slide1_div2">
-                  <img src="crousel_img2.jpeg" class="crousel_img">
+                  <img src="images/crousel_img2.jpeg" class="crousel_img">
                 </div>
 
                 <div id="slide1_div3">
-                  <img  src="crousel_img3.jpeg" class="crousel_img">
+                  <img  src="images/crousel_img3.jpeg" class="crousel_img">
                 </div>
               </div>
                
@@ -165,15 +174,15 @@
             <div class="carousel-item" data-bs-interval="2000">
               <div class="crousel_slide"> 
                 <div id="slide2_div1">
-                  <img src="crousel_img4.jpg" class="crousel_img">
+                  <img src="images/crousel_img4.jpg" class="crousel_img">
                 </div>
 
                 <div id="slide2_div2">
-                  <img src="crousel_img5.jpg" class="crousel_img">
+                  <img src="images/crousel_img5.jpg" class="crousel_img">
                 </div>
 
                 <div id="slide2_div3">
-                  <img  src="crousel_img6.jpg" class="crousel_img">
+                  <img  src="images/crousel_img6.jpg" class="crousel_img">
                 </div>
               </div>
             
@@ -201,7 +210,7 @@
 
 <div id="register">
   <div id="register_img_div">
-    <img src="3d_img2.png" alt="img" id="register_img" >
+    <img src="images/3d_img2.png" alt="img" id="register_img" >
   </div>
       
 
@@ -269,7 +278,7 @@
     </footer>
     
       <script>
-        type_text= document.getElementById('type_text')
+        const type_text= document.getElementById('type_text')
 
         var lines=["Dive into the Code Abyss with Coding Ninjas - Are You Brave Enough? ", 
         "Ready to Elevate Your Coding Game? Join the Coding Ninjas Revolution! ", " Can You Conquer the Coding Challenges? Find Out at Coding Ninjas' Event! "] ;
